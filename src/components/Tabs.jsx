@@ -41,7 +41,8 @@ const Tabs = () => {
         ))}
       </div>
       <div className="content">
-        <div dangerouslySetInnerHTML={{ __html: tabContent }} />
+        <h2>Title {activeTab}</h2>
+        <div dangerouslySetInnerHTML={{ __html: tabContent }} />{" "}
       </div>
     </div>
   );

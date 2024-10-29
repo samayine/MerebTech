@@ -5,38 +5,57 @@
 }
 
 body {
-  background-color: black;
+  background-color: white;
   font-family: "Roboto", sans-serif;
+  color: black;
   margin: 20px;
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-/* TODO: Add css here */
+
 .tabs {
-  display: flex; /* Make tabs horizontal */
-  justify-content: space-around; /* Space between tabs */
-  background-color: #333; /* Background color for tabs */
-  border-radius: 5px; /* Rounded corners */
+  display: flex;
+  background-color: #333;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 }
 
 .tab {
-  flex: 1; /* Make each tab take equal space */
-  padding: 10px;
+  flex: 1;
+  padding: 15px;
   text-align: center;
-  color: white; /* Tab text color */
-  cursor: pointer; /* Pointer cursor for tab interaction */
-  transition: background-color 0.3s; /* Smooth background transition */
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .tab:hover {
-  background-color: #444; /* Change background on hover */
+  background-color: #444;
 }
 
 .active {
-  background-color: #555; /* Active tab color */
+  background-color: #42659b;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 0 0 5px 5px;
+  margin-top: -5px;
+}
+
+.content h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -45,13 +64,6 @@ body {
   }
 
   .content {
-    padding: 50px;
+    padding: 20px;
   }
-}
-.content {
-  padding: 20px;
-  background-color: #222; /* Background color for content */
-  color: white; /* Text color */
-  border-radius: 5px; /* Rounded corners for content area */
-  margin-top: 20px; /* Space above the content */
 }
